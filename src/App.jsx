@@ -1,20 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Calculator from './components/Calculator';
 import './App.global.css';
-
-const Hello = () => {
-  return (
-    <div>
-      <h1 className="Hello">Hello</h1>
-    </div>
-  );
-};
 
 export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Hello} />
+        <Route path="/" component={Calculator} />
       </Switch>
     </Router>
   );
